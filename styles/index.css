@@ -22,3 +22,42 @@
 body{
     background-color: var(--gray);
 }
+
+/* naviagation */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+
+nav img{
+    margin-left: 40px;
+    height: 70px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    margin: 0 20px;
+}
+
+a{
+    color: black;
+    font-family: raleway;
+}
+
+a:hover{
+    color: var(--bleu);
+    padding-top: 35px;
+    border-top: 2px solid var(--bleu);
+}
+
+#strong{
+    color: var(--bleu);
+    font-weight: 900;
+}
