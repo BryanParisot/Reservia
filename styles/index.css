@@ -15,9 +15,11 @@
 
 :root {
     --bleu: #0065FC;
-    --bleu_little: #073f94;
+    --bleu_hover: #073f94;
     --bleu_light: #dbe4f1;
     --gray: #F2F2F2;
+    --gray_grv: #c5c4c4;
+
 }
 
 body{
@@ -81,7 +83,7 @@ input{
     right: 4px;
     bottom: 1px;
     background-color: var(--gray);
-    border: 1px solid rgb(214, 214, 214);
+    border: 1px solid var(--gray_grv);
     height: 44px;
     width: 250px;
 
@@ -91,7 +93,6 @@ button{
     position: relative;
     right: 5px;
     top: 1px;
-    background-color: var(--bleu);
     height: 45px;
     width: 120px;
     color: white;
@@ -99,15 +100,81 @@ button{
     border: none;
     font-weight: 600;
     font-size: 1.1rem;
+    background-color: var(--bleu);
 }
 
 button:hover{
-    background-color: var(--bleu_little);
+    background-color: var(--bleu_hover);
 }
 
 #localisation{
-    background-color: var(--bleu_light);
     border-radius: 10px 0px 0px 10px ;
     padding: 13px;
+    background-color: var(--gray_grv);
 
+}
+
+/* filtres */
+
+.container_filtres{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 25px;
+
+}
+.container_filtres, p{
+    font-weight: 700;
+}
+
+
+.filtre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 20px;
+    width: auto;
+    height: 35px;
+    border: solid 3px var(--gray_grv);
+    color: black;
+    font-weight: 600;
+}
+
+.forme{
+    position: relative;
+    right: 13px;
+    padding: 9px;
+    border-radius: 50%;
+    background-color: var(--bleu_light);
+    color: var(--bleu);
+}
+.forme, i {
+    text-align: center;
+    justify-content: center;
+}
+.text_filtre {
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+#ajust_filtre{
+    padding-right: 12px;
+    padding-left: 12px;
+    
+}
+
+/* text avec le i  */
+
+.container_txt{
+    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#i{
+    color: var(--bleu);
+    border: solid 2px var(--gray_grv);
+    border-radius: 50%;
+    padding: 2px 8px 2px 8px    
 }
