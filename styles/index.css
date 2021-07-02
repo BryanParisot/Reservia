@@ -18,7 +18,7 @@
     --bleu_hover: #073f94;
     --bleu_light: #dbe4f1;
     --gray: #F2F2F2;
-    --gray_grv: #c5c4c4;
+    --gray_grv: #e7e7e7;
 
 }
 
@@ -71,6 +71,7 @@ a:hover{
 
 .container-search p {
     line-height: 30px;
+    font-weight: 100;
 }
 
 .search{
@@ -172,9 +173,95 @@ button:hover{
     margin-bottom: 25px;
 }
 
+#weight{
+    font-weight: 100;
+}
+
 #i{
     color: var(--bleu);
     border: solid 2px var(--gray_grv);
     border-radius: 50%;
-    padding: 2px 8px 2px 8px    
+    padding: 2px 8px 2px 8px;   
+    font-weight: 600;
+}
+
+/* Container qui contienent les annonces */
+
+.container{
+    display: flex;
+    margin: 0px 40px 0px 40px ;
+}
+/* Container qui contient les hébérgements de marseille */
+
+.container_hebergements{
+    height: 520px;
+    width: 799px;
+    margin-right: 40px;
+    border-radius: 10px;
+    background-color: var(--gray_grv);
+}
+
+.container_contain{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    height: 90%;
+    width: 90%;
+}
+.container_container_hebergement{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.contain_hebergement{
+    width: 220px;
+    height: 170px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 3px;
+    box-shadow: 1px 1px 1px rgb(170, 169, 169);
+}
+#mr{
+    margin-right: 20px;
+}
+.containe_element_hebergement{
+    height: 60%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+.containe_element_hebergement, 
+p{
+    font-weight: 100;
+}
+.containe_stars{
+    display: flex;
+}
+.fa-star{
+    margin-top: 3px;
+    color: var(--bleu);
+    margin-right: 2px;
+}
+.fa-star--desactive{
+    color: var(--gray) ;
+}
+
+
+
+
+
+
+/* Container qui contient les hébérgements les plus populaires */
+
+.container_populaire{
+    height: 520px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: var(--gray_grv);
+
 }
