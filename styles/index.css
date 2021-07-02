@@ -194,7 +194,7 @@ button:hover{
 /* Container qui contient les hébérgements de marseille */
 
 .container_hebergements{
-    height: 520px;
+    height: 540px;
     width: 799px;
     margin-right: 40px;
     border-radius: 10px;
@@ -217,11 +217,11 @@ button:hover{
 }
 .contain_hebergement{
     width: 220px;
-    height: 170px;
+    height: 180px;
     border-radius: 10px;
     margin-top: 20px;
     background-color: white;
-    padding: 3px;
+    padding: 5px;
     box-shadow: 1px 1px 1px rgb(170, 169, 169);
 }
 #mr{
@@ -239,13 +239,20 @@ button:hover{
 p{
     font-weight: 100;
 }
+
+#mt-3{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
 .containe_stars{
     display: flex;
 }
 .fa-star{
-    margin-top: 3px;
+    margin-top: 8px;
     color: var(--bleu);
-    margin-right: 2px;
+    margin-right: 1px;
+    font-size: 0.75rem;
 }
 .fa-star--desactive{
     color: var(--gray) ;
@@ -259,9 +266,54 @@ p{
 /* Container qui contient les hébérgements les plus populaires */
 
 .container_populaire{
-    height: 520px;
+    height: 540px;
     width: 400px;
     border-radius: 10px;
     background-color: var(--gray_grv);
+    padding: 20px;
+
+}
+.container_contain_populaire{
+    width: 100%;
+    height: 100%;
+}
+.title_populaire{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.contain_populaire{
+    display: flex;
+    background-color: white;
+    width: 340px;
+    height: 130px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+.img_populaire{
+    background-color: red;
+    border-radius: 8px 0px 0px 8px;
+    height: 100%;
+    width: 35%;
+}
+
+.contain_contenu_populaire{
+    padding: 10px 0px 0px 10px ;
+    width: 160px;
+    height: 100%;
+}
+
+.contain_contenu_populaire  p {
+    font-weight: 100;
+    margin: 5px 0px 18px ;
+}
+
+.contain_contenu_populaire 
+.fa-star {
+   margin-right: -2px;
 
 }
