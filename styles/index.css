@@ -23,7 +23,7 @@
 }
 
 body{
-    background-color: var(--gray);
+    background-color: white;
 }
 
 /* naviagation */
@@ -49,12 +49,11 @@ li{
     margin: 0 20px;
 }
 
-a{
+nav a{
     color: black;
     font-family: raleway;
 }
-
-a:hover{
+nav a:hover{
     color: var(--bleu);
     padding-top: 35px;
     border-top: 2px solid var(--bleu);
@@ -322,7 +321,7 @@ p{
 .container_activity{
     width: 1237px;
     height: 500px;
-    margin: 40px auto;
+    margin: 40px auto 0px;
 }
 
 .container_contain_activity{
@@ -341,6 +340,8 @@ p{
 .img_element{
     width: 100%;
     height: 350px;
+    background-color: yellow;
+
 
 }
 .element_xl_txt{
@@ -414,5 +415,36 @@ p{
     padding: 15px 15px;
 
 }
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    height: 200px;
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color: var(--gray_grv)
+}
+
+footer a {
+    color: black;
+    margin-top: 9px;
+}
+
+.propos{
+    display: flex;
+    flex-direction: column;
+}
+
+.hebergemement{
+    display: flex;
+    flex-direction: column;
+}
+
+.assistance{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
