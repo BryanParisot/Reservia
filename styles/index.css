@@ -17,7 +17,7 @@
   --bleu_hover: #073f94;
   --bleu_light: #deecff;
   --gray: #f2f2f2;
-  --gray_grv: #EDEDED;
+  --gray_grv: #ededed;
 }
 
 body {
@@ -66,12 +66,18 @@ nav a {
   color: black;
   font-family: raleway;
 }
+
 nav a:hover {
   color: var(--bleu);
   padding-top: 39px;
   border-top: 2px solid var(--bleu);
 }
 
+nav a:active {
+  color: var(--bleu);
+  padding-top: 39px;
+  border-top: 2px solid var(--bleu);
+}
 
 /* responsive Navigation et search */
 @media screen and (max-width: 740px) {
@@ -199,6 +205,33 @@ button:hover {
 .display_btn_search {
   display: none;
 }
+@media screen and (max-width: 480px) {
+  .display_btn_txt {
+    display: none;
+  }
+  .display_btn_search {
+    display: block;
+  }
+  #localisation {
+    padding: 12px 8px !important;
+  }
+
+  input {
+    width: 240px;
+  }
+
+  button {
+    left: 272px;
+    top: -45px;
+    width: 45px;
+    border-radius: 10px;
+  }
+
+  .search {
+    height: 40px;
+    width: 100%;
+  }
+}
 
 /* responsive pour la nav et le search  */
 
@@ -207,7 +240,7 @@ button:hover {
     width: auto;
   }
   nav img {
-      width: 110px;
+    width: 110px;
   }
 
   .container-search {
@@ -271,6 +304,12 @@ p {
   font-weight: 700;
 }
 
+.container_filtres,
+p:hover {
+  cursor: pointer;
+  color: var(--bleu_hover);
+}
+
 .filtre {
   display: flex;
   align-items: center;
@@ -329,6 +368,7 @@ i {
   padding: 2px 8px 2px 8px;
   font-weight: 600;
   margin-right: 10px;
+  font-weight: 900;
 }
 
 .container_txt {
@@ -339,7 +379,7 @@ i {
 @media screen and (max-width: 740px) {
   .container_filtres {
     flex-wrap: wrap;
-    width: 370px;
+    width: 70%;
     margin-left: 20px;
   }
   #mr_1 {
@@ -353,17 +393,29 @@ i {
     margin-left: 10px;
     margin-right: 25px;
     border: solid 3px var(--gray);
-
+  }
+}
+@media screen and (max-width: 480px) {
+  .container_filtres {
+    margin-left: 40px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  .container_txt {
+  .container_filtres {
+    margin-right: 15px;
+    width: 88%;
     margin-left: 15px;
   }
 
+  .container_txt {
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
   .container_txt p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
     padding-right: 15px;
   }
   #i {
@@ -485,48 +537,74 @@ p {
   margin-top: 25px;
   font-weight: 900;
   font-size: 1rem;
+  width: 100%;
+  text-align: start;
 }
 @media screen and (max-width: 1214px) {
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .container_hebergements{
-        width: auto;
-        height: auto;
-        margin-right: 0px;
-    }
-    .contain_hebergement{
-        width: 300px;
-        margin-left: 10px;
-    }
-    .container_container_hebergement{
-        justify-content: center;
-    }
-    .container_populaire{
-        margin-top: 30px;
-        width: auto !important;
-        height: auto !important;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_hebergements {
+    width: auto;
+    height: auto;
+    margin-right: 0px;
+  }
+  .contain_hebergement {
+    width: 300px;
+    margin-left: 10px;
+  }
+  .container_container_hebergement {
+    justify-content: center;
+  }
+  .container_populaire {
+    margin-top: 30px;
+    width: auto !important;
+    height: auto !important;
+  }
 
-    .container_contain_populaire{
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-    .contain_populaire{
-        width: 100px;
-        margin-right: 10px !important;
-    }
-    #mr{
-        margin-right: 0px;
-    }
-
+  .container_contain_populaire {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contain_populaire {
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #mt_2 {
+    padding: 10px;
+    text-align: center;
+  }
 }
 
+@media screen and (max-width: 1100px) {
+  .contain_hebergement {
+    width: 370px;
+  }
+
+  #mt2 {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  #mr {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .contain_hebergement {
+    width: 400px;
+  }
+  #mt_2 {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 @media screen and (max-width: 414px) {
   .container {
+    flex-direction: column-reverse !important;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -535,27 +613,32 @@ p {
     height: auto;
     background: white;
   }
+  .container_container_hebergement {
+    justify-content: start;
+  }
   .contain_hebergement {
     width: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .container_contain h2 {
-    font-size: 1.4rem;
-    margin-left: 16px;
+    font-size: 1.5rem;
   }
 
   #mt_2 {
-    font-size: 1.25rem;
-    margin-left: 15px;
+    font-size: 1.35rem;
     margin-bottom: 30px;
+    text-align: start;
+    font-weight: 900;
   }
+
   #mr {
-    margin-right: 20px;
+    margin-right: 0px;
   }
   #mt-3 {
     margin-top: 5px;
     margin-bottom: 3px;
+    font-size: 1.1rem;
   }
 }
 
@@ -624,14 +707,29 @@ h3 {
   padding: 0px;
   margin-right: -4px;
 }
+@media screen and (max-width: 1100px) {
+  .title_populaire {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 414px) {
   .container_populaire {
     border-radius: 0px;
-    width: 100%;
+    width: 100% !important;
     margin-bottom: 10px;
   }
   .title_populaire {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin-bottom: 25px;
   }
 
@@ -655,8 +753,8 @@ h3 {
   margin-top: 40px;
 }
 .card_txt {
-  height: auto;
-  margin: auto 0px auto 15px ;
+  padding: 15px 0px 10px 15px;
+  margin: auto 0px auto 0px;
 }
 
 .container_contain_activity {
@@ -679,7 +777,7 @@ h3 {
 
 .card_img_xl {
   border-radius: 10px 10px 0px 0px;
-  height: 390px;
+  height: 27rem;
 }
 .card_img_xl img {
   width: 100%;
@@ -690,7 +788,7 @@ h3 {
 
 .card_img_md {
   border-radius: 10px 10px 0px 0px;
-  height: 200px;
+  height: 13rem;
 }
 .card_img_md img {
   width: 100%;
@@ -701,7 +799,7 @@ h3 {
 
 .card_img_mlt {
   border-radius: 10px 10px 0px 0px;
-  height: 85px;
+  height: 8rem;
 }
 .card_img_mlt img {
   width: 100%;
@@ -712,9 +810,19 @@ h3 {
 
 .card_img_lt {
   border-radius: 10px 10px 0px 0px;
-  height: 170px;
+  height: 11rem;
 }
 .card_img_lt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.card_img_lt-2 {
+  border-radius: 10px 10px 0px 0px;
+  height: 10rem;
+}
+.card_img_lt-2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -725,13 +833,10 @@ h3 {
   grid-area: 1 / 1 / 4 / 2;
 }
 .bloc_card_2 {
-  grid-area: 1 / 2 / 2 / 3;
-  height: 115%;
+  grid-area: 1 / 2 / 3 / 3;
 }
 .bloc_card_3 {
   grid-area: 3 / 2 / 4 / 3;
-  height: 85%;
-  margin-top: 27px;
 }
 .bloc_card_4 {
   grid-area: 1 / 3 / 4 / 4;
@@ -740,7 +845,7 @@ h3 {
   grid-area: 1 / 4 / 2 / 5;
 }
 .bloc_card_6 {
-  grid-area: 3 / 4 / 4 / 5;
+  grid-area: 2 / 4 / 4 / 5;
 }
 
 /* Responsive partie activité Marseille */
@@ -751,17 +856,20 @@ h3 {
   }
 
   .card_img_xl {
-    height: 80px;
+    height: 120px;
   }
 
   .card_img_md {
-    height: 80px;
+    height: 120px;
   }
   .card_img_mlt {
-    height: 80px;
+    height: 120px;
   }
   .card_img_lt {
-    height: 80px;
+    height: 120px;
+  }
+  .card_img_lt-2 {
+    height: 120px;
   }
 
   .bloc_card_1 {
@@ -784,6 +892,11 @@ h3 {
   }
   .bloc_card_6 {
     grid-area: 3 / 3 / 4 / 5;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container_activity {
+    height: 500px;
   }
 }
 
@@ -821,6 +934,9 @@ h3 {
   .card_img_lt {
     height: 100px;
   }
+  .card_img_lt-2 {
+    height: 100px;
+  }
 }
 
 /* FOOTER */
@@ -856,16 +972,35 @@ footer a {
   flex-direction: column;
 }
 
+@media screen and (max-width: 900px) {
+    footer {
+      margin-top: 180px;
+    }
+  }
+  
+@media screen and (max-width: 740px) {
+  footer {
+    font-size: 0.9rem;
+    margin-top: 270px;
+  }
+}
+
 @media screen and (max-width: 514px) {
   footer {
     display: flex;
     flex-direction: column;
     height: 100%;
     padding-bottom: 30px;
-    margin-top: 30px;
-
+    margin-top: 130px !important;
   }
   .hebergemement {
     margin: 30px 0px;
   }
 }
+@media screen and (max-width: 400px) {
+    footer {
+        margin-top: 40px !important;
+      }
+      
+}
+
