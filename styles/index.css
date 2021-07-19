@@ -180,7 +180,7 @@ input {
 
 button {
   position: relative;
-  right: 5px;
+  right: 8px;
   top: 0.3px;
   height: 44px;
   width: 110px;
@@ -329,6 +329,12 @@ p:hover {
   border-radius: 50%;
   background-color: var(--bleu_light);
   color: var(--bleu);
+}
+.forme:hover{
+  background-color: var(--bleu);
+  color: white;
+
+
 }
 .forme,
 i {
