@@ -244,7 +244,6 @@ button:hover {
 
   .container-search {
     margin-left: 20px;
-    margin-right: none;
   }
 
   .container-search h1 {
@@ -298,6 +297,14 @@ button:hover {
   margin-left: 40px;
   margin-top: 25px;
 }
+
+.container_filtres h2{
+  font-weight: 700;
+  color: #000;
+  font-size: 1rem;
+ 
+}
+
 .container_filtres,
 p {
   font-weight: 700;
@@ -534,7 +541,6 @@ p {
   color: var(--bleu);
   font-size: 0.75rem;
   margin-right: -10px;
-  padding-right: none;
 }
 .fa-star--desactive {
   color: var(--gray);
