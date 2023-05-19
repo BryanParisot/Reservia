@@ -24,8 +24,9 @@ Implémenter une interface responsive
 **Client:** HTML, CSS
 
 
-Bryan Parisot 
+
 ## 🚀 Qui suis-je 
 
 Un développeur frontend passionné et curieux de découvrir de nouveaux défis.
 
+Bryan Parisot 
