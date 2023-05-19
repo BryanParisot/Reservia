@@ -25,6 +25,11 @@ Implémenter une interface responsive
 
 
 
+## Capture d'écran du site 
+
+![App Screenshot](https://raw.githubusercontent.com/BryanParisot/Reservia/main/images/maquette/maquette%20reservia%20.png)
+
+
 ## 🚀 Qui suis-je 
 
 Un développeur frontend passionné et curieux de découvrir de nouveaux défis.
