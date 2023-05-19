@@ -34,4 +34,10 @@ Implémenter une interface responsive
 
 Un développeur frontend passionné et curieux de découvrir de nouveaux défis.
 
-Bryan Parisot 
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bryan-parisot-a99b0a1b1/)
+
+
+## Authors
+
+- [@bryanParisot](https://github.com/BryanParisot)
