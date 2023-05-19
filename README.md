@@ -25,7 +25,7 @@ Implémenter une interface responsive
 
 
 
-## Capture d'écran du site 
+## Capture d'écran de la maquette
 
 ![App Screenshot](https://raw.githubusercontent.com/BryanParisot/Reservia/main/images/maquette/maquette%20reservia%20.png)
 
